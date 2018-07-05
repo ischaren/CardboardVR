@@ -1,0 +1,105 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #292a2b;
+	font-family: "Arial", "Open Sans", serif;
+	font-size: 14px;
+	color: #525355;
+	margin: 0px;
+	padding: 0px;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+}
+
+#viewport {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+#controls {
+	width: 100%;
+	text-align: left;
+}
+
+#controls div {
+	background-color: #414245;
+	padding: 5px;
+	color: #292a2b;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+#controls-button {
+	position: absolute;
+	right: 10px;
+	-moz-transform: translate(0%, 35%);
+	-webkit-transform: translate(0%, 35%);
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	border-radius: 2px;
+	text-decoration: none;
+	text-align: middle;
+	border: none;
+	outline: 0;
+	line-height: 100%;
+	height: 20px;
+	padding: 0px;
+	min-width: 80px;
+	color: #ffffff;
+	background: linear-gradient(#616366, #5a5b5e);
+	padding: 0px 6px;
+}
+
+progress[value] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	width: 300px;
+	height: 5px;
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: #000000;
+	border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+	background-color: #525355;
+	border-radius: 2px;
+}
+
+progress[value]::-moz-progress-bar {
+	background-color: #525355;
+}
+
+#status {
+	font-size: 20px;
+}
+
+.adsk-loading .progress-overlay {
+	position: absolute;
+	width: 50%;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -100px);
+	-webkit-transform: translate(-50%, -100px);
+	min-width: 200px;
+	text-align: center;
+	overflow: visible;
+}
+.adsk-loading .progress-overlay img {
+	max-width: 500px;
+	text-align: center;
+	overflow: hidden;
+	margin: 10px;
+}
